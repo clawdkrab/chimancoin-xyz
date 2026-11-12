@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- custom -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$CHIMAN | Chihuahuas Are Just Little Men</title>
+<meta name="description" content="LilMen.net: the professional network for chihuahuas who are, let's be honest, just little men. Senior Shaking Officers, VPs of Tongue Ops, and $CHIMAN on Solana.">
+<meta name="theme-color" content="#1f4f8f">
+<meta property="og:title" content="$CHIMAN | Chihuahuas Are Just Little Men">
+<meta property="og:description" content="Connect with little men in your area. Open to work (for treats). $CHIMAN, a meme coin on Solana.">
+<meta property="og:image" content="banner.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Archivo+Black&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:where(img){height:auto}
+:root{--blue:#1f4f8f;--blue2:#2f6fc0;--paper:#f4f1ea;--card:#fff;--line:#ddd6c8;--ink:#1d1d1f;--dim:#6a6760;--pink:#ff5fb0;--lime:#b6ff3b;--plaid1:#8a7a4f;--plaid2:#b8a878;--tan:#c9a57a;
+--ui:'Source Sans 3',Verdana,sans-serif;--disp:'Archivo Black',Impact,sans-serif;--comic:'Comic Neue','Comic Sans MS',cursive}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+html,body{overflow-x:hidden;overflow-x:clip}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);font-size:17px;line-height:1.55}
+img{max-width:100%;display:block}
+a{color:var(--blue2)}
+h1,h2,h3{margin:0;line-height:1.15}
+button,input,select,textarea{font:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- top nav ---------- */
+.nav{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.nav-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:8px 16px}
+.logo{font-family:var(--disp);font-size:22px;color:var(--blue);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:6px}
+.logo i{font-style:normal;background:var(--blue);color:#fff;border-radius:4px;padding:0 6px;font-size:16px}
+.search{flex:1;max-width:320px;background:#eef1f5;border:0;border-radius:4px;padding:8px 12px;color:var(--dim)}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:13px;display:grid;justify-items:center;padding:2px 10px;position:relative}
+.nav-links a b{display:block;width:22px;height:20px;border-radius:4px;background:#c8c3b8}
+.nav-links a:hover{color:var(--ink)}
+.nav-links .bdg{position:absolute;top:-4px;right:4px;background:#d93025;color:#fff;font-size:11px;border-radius:9px;padding:0 5px}
+.btn{display:inline-block;border-radius:999px;padding:8px 20px;font-weight:700;text-decoration:none;border:1.5px solid var(--blue2);color:var(--blue2);background:#fff;cursor:pointer;transition:background .15s}
+.btn:hover{background:#eaf1fb}
+.btn.solid{background:var(--blue2);color:#fff}
+.btn.solid:hover{background:var(--blue)}
+.ticker{background:var(--blue);color:#fff;font-size:13px;overflow:hidden;white-space:nowrap;padding:4px 0}
+.ticker span{display:inline-block;padding-left:100%;animation:mq 30s linear infinite}
+@keyframes mq{to{transform:translateX(-100%)}}
+
+/* ---------- kitchen parallax hero ---------- */
+.kitchen{position:relative;overflow:hidden;padding:60px 16px 90px;min-height:92vh}
+.pl{position:absolute;left:0;right:0;pointer-events:none;will-change:transform}
+.k-wall{inset:-10% 0 0 0;background:linear-gradient(#f7e9c9,#efd9ae);}
+.k-wall:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 46px,rgba(150,110,60,.08) 46px 48px)}
+.k-window{top:6%;left:8%;width:220px;height:200px;right:auto;background:linear-gradient(#9fd3ff,#d7f0ff);border:12px solid #fff;box-shadow:0 0 0 2px #d9c9a6}
+.k-window:before,.k-window:after{content:"";position:absolute;background:#fff}
+.k-window:before{left:50%;top:0;bottom:0;width:8px;margin-left:-4px}.k-window:after{top:50%;left:0;right:0;height:8px;margin-top:-4px}
+.k-shelf{top:10%;height:220px}
+.cab{position:absolute;top:0;width:180px;height:200px;background:linear-gradient(90deg,#8fa6c9,#a9bedc);border:6px solid #7d93b5;border-radius:4px;box-shadow:inset 0 0 0 10px rgba(255,255,255,.2)}
+.cab:after{content:"";position:absolute;bottom:20px;right:16px;width:8px;height:30px;border-radius:4px;background:#e6d39a}
+.jar{position:absolute;width:44px;height:58px;border-radius:20px 20px 10px 10px;background:linear-gradient(#c8e86b,#9cc23f);box-shadow:inset -6px 0 rgba(0,0,0,.12)}
+.k-counter{bottom:0;height:150px;background:linear-gradient(#e7dfcf 0 16px,#b88a5a 16px 22px,#a6774a 22px);}
+.k-counter:before{content:"";position:absolute;inset:22px 0 0;background:repeating-linear-gradient(90deg,transparent 0 200px,rgba(0,0,0,.18) 200px 204px)}
+.coffee{position:absolute;bottom:150px;width:70px;height:110px;background:linear-gradient(90deg,#ddd,#fff 40%,#ccc);border-radius:10px 10px 4px 4px}
+.coffee:after{content:"";position:absolute;bottom:8px;left:12px;width:46px;height:44px;border-radius:0 0 18px 18px;background:rgba(80,40,20,.7)}
+.chair{position:absolute;bottom:60px;width:120px;height:160px;border:10px solid #e9e1d1;border-bottom:0;border-radius:60px 60px 0 0;background:repeating-linear-gradient(90deg,transparent 0 18px,#e9e1d1 18px 26px)}
+
+.prof{position:relative;z-index:3;max-width:1060px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 2px 0 rgba(0,0,0,.04)}
+.pc{overflow:hidden}
+.pc .cover{height:150px;background:url(banner.jpg) center/cover;position:relative}
+.pc .cover b{position:absolute;right:12px;top:12px;background:#fff;border-radius:999px;padding:4px 12px;font-size:13px;color:var(--blue)}
+.pc .body{padding:0 26px 24px;position:relative}
+.ava{width:150px;height:150px;border-radius:50%;border:5px solid #fff;margin-top:-80px;background:#fff;position:relative;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.ava img{border-radius:50%}
+.ava .otw{position:absolute;left:-6px;right:-6px;bottom:-6px;height:50%;border-radius:0 0 80px 80px;border:5px solid #3c9a3c;border-top:0;pointer-events:none}
+.ava .otw:after{content:"#OPENTOTREATS";position:absolute;bottom:2px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:700;color:#fff;background:#3c9a3c;padding:0 6px;border-radius:6px;white-space:nowrap}
+.pc h1{font-family:var(--disp);font-weight:400;font-size:clamp(30px,4.5vw,46px);margin-top:12px;letter-spacing:-.5px}
+.pc h1 small{font-family:var(--ui);font-size:16px;color:var(--dim);font-weight:400;letter-spacing:0}
+.headline{font-size:19px;margin:4px 0 6px}
+.meta{color:var(--dim);font-size:15px}
+.meta a{font-weight:700;text-decoration:none}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.side{display:grid;gap:16px}
+.fullbody{padding:10px}
+.fullbody img{border-radius:6px;width:100%}
+.fullbody p{margin:8px 4px 0;font-size:14px;color:var(--dim)}
+.views{padding:14px 18px;font-size:15px}
+.views b{font-family:var(--disp);font-weight:400;font-size:28px;color:var(--blue);display:block}
+
+/* ---------- generic section ---------- */
+.sec{position:relative;padding:70px 16px;z-index:2}
+.wrap{max-width:1060px;margin:0 auto}
+.h2{font-family:var(--disp);font-weight:400;font-size:clamp(28px,4vw,44px);letter-spacing:-.5px;margin-bottom:6px}
+.lead{color:var(--dim);margin:0 0 26px}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .7s,transform .7s cubic-bezier(.2,.9,.3,1)}
+.rv.in{opacity:1;transform:none}
+
+/* post */
+.post{max-width:720px;padding:20px 24px}
+.post .hd{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.post .hd img{width:52px;height:52px;border-radius:50%}
+.post .hd b{display:block}
+.post .hd small{color:var(--dim)}
+.post p{margin:0 0 12px}
+.post .more{display:none}
+.post.open .more{display:block}
+.post .seemore{all:unset;cursor:pointer;color:var(--dim);font-weight:700}
+.post.open .seemore{display:none}
+.reacts{display:flex;justify-content:space-between;border-top:1px solid var(--line);margin-top:12px;padding-top:10px;color:var(--dim);font-size:14px;flex-wrap:wrap;gap:8px}
+.reacts button{all:unset;cursor:pointer;font-weight:700;padding:4px 8px;border-radius:4px}
+.reacts button:hover{background:#f0ede6}
+.post-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:24px;align-items:start}
+.exp{padding:20px 22px}
+.exp h3{font-size:20px;margin-bottom:12px}
+.job{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.job i{width:44px;height:44px;border-radius:6px;display:block;background:#eee}
+.job b{display:block}
+.job small{color:var(--dim);display:block}
+
+/* people cards */
+.people{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.person{overflow:hidden;display:flex;flex-direction:column}
+.person .ph{aspect-ratio:1;overflow:hidden;background:#eee}
+.person .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.person:hover .ph img{transform:scale(1.06)}
+.person .in{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.person h3{font-size:19px}
+.person .ttl{color:var(--dim);font-size:15px;line-height:1.35}
+.skill{display:flex;justify-content:space-between;align-items:center;font-size:14px;border-top:1px dashed var(--line);padding-top:6px}
+.skill button{all:unset;cursor:pointer;border:1px solid var(--blue2);color:var(--blue2);border-radius:999px;padding:1px 10px;font-weight:700;font-size:13px}
+.skill button.done{background:var(--blue2);color:#fff}
+
+/* ---------- ChiMatch (2003 dating site) ---------- */
+.dating{background:#ffe3f1;background-image:radial-gradient(#ffc0e0 2px,transparent 2px);background-size:22px 22px;font-family:var(--comic);border-top:6px ridge var(--pink);border-bottom:6px ridge var(--pink)}
+.dating .h2{font-family:var(--comic);font-weight:700;color:#d1006f;text-shadow:2px 2px 0 var(--lime);font-size:clamp(34px,5vw,56px)}
+.blink{animation:blink 1s steps(1) infinite;color:#ff0000;font-weight:700}
+@keyframes blink{50%{opacity:0}}
+.hot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
+.frame{background:#fff;border:4px outset #ff9ccf;padding:10px;transform:rotate(-1.5deg);box-shadow:8px 8px 0 #d1006f}
+.frame img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#000}
+.frame .asl{font-size:16px;margin-top:8px}
+.rate{background:#fff;border:3px dashed var(--pink);padding:20px;border-radius:14px}
+.rate h3{font-size:28px;color:#d1006f}
+.nums{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:14px 0}
+.nums button{font-family:var(--comic);font-weight:700;font-size:22px;padding:10px 0;background:linear-gradient(#fff,#ffd1e8);border:2px outset #ff9ccf;border-radius:6px;cursor:pointer;color:#d1006f}
+.nums button:active{border-style:inset}
+.score{font-size:20px;min-height:2.6em}
+.strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:26px}
+.strip button{all:unset;cursor:pointer;background:#fff;padding:4px;border:2px solid #ff9ccf;transition:transform .2s}
+.strip button:hover,.strip button:focus-visible,.strip button.on{transform:rotate(-4deg) scale(1.06);border-color:#d1006f}
+.strip img{width:100%;aspect-ratio:1;object-fit:cover}
+
+/* ---------- office parallax + hire form ---------- */
+.office{position:relative;overflow:hidden;padding:90px 16px;background:#dfe6ee}
+.o-blinds{inset:-20% 0 auto 0;height:70%;background:repeating-linear-gradient(180deg,#f7f9fb 0 14px,#c9d3de 14px 16px);opacity:.8}
+.o-cubes{bottom:-10%;height:55%;background:linear-gradient(transparent 0 0),repeating-linear-gradient(90deg,#8a96a8 0 320px,#6f7b8e 320px 330px);-webkit-mask:linear-gradient(transparent 0 30%,#000 30%);mask:linear-gradient(transparent 0 30%,#000 30%)}
+.o-plant{bottom:0;left:4%;right:auto;width:90px;height:220px}
+.o-plant:before{content:"";position:absolute;bottom:0;left:15px;width:60px;height:70px;background:#b4532a;border-radius:0 0 12px 12px}
+.o-plant:after{content:"";position:absolute;bottom:60px;left:0;width:90px;height:150px;background:radial-gradient(circle at 30% 30%,#4f9d4a 0 30%,transparent 31%),radial-gradient(circle at 70% 40%,#3d8a3a 0 30%,transparent 31%),radial-gradient(circle at 50% 70%,#57a852 0 35%,transparent 36%)}
+.hire{position:relative;z-index:2;max-width:640px;margin:0 auto;padding:26px}
+.hire label{display:block;font-weight:700;margin:14px 0 4px}
+.hire input,.hire select,.hire textarea{width:100%;padding:10px 12px;border:1px solid #b8b2a5;border-radius:6px;background:#fff}
+.hire textarea{min-height:80px;resize:vertical}
+.hire .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hire output{font-weight:700;color:var(--blue)}
+.hire .ok{display:none;margin-top:16px;background:#eaf6ea;border:1px solid #3c9a3c;padding:12px 14px;border-radius:6px}
+.hire .ok.on{display:block}
+
+/* onboarding checklist */
+.check{list-style:none;padding:0;margin:0;display:grid;gap:12px;max-width:760px}
+.check li{padding:16px 18px;display:grid;grid-template-columns:30px 1fr;gap:14px;align-items:start}
+.check input{width:24px;height:24px;margin-top:3px;accent-color:var(--blue2)}
+.check b{display:block;font-size:18px}
+.check li.done b{text-decoration:line-through;color:var(--dim)}
+.prog{height:10px;border-radius:5px;background:#e3ded3;margin:0 0 18px;max-width:760px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:#3c9a3c;transition:width .3s}
+
+/* comp package */
+.comp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.comp .card{padding:20px 22px}
+.comp small{color:var(--dim);text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:700}
+.comp b{display:block;font-family:var(--disp);font-weight:400;font-size:clamp(22px,2.6vw,30px);color:var(--blue);margin:4px 0}
+.comp p{margin:0;color:var(--dim);font-size:15px}
+
+/* contact card */
+.contact{max-width:760px;padding:22px 24px}
+.contact .ca{display:flex;flex-wrap:wrap;gap:12px;align-items:center;background:#f6f4ef;border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:10px 0}
+.contact code{flex:1;min-width:200px;overflow-wrap:anywhere;font-size:16px}
+.contact .msg{color:#3c9a3c;font-weight:700;min-height:1.5em}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+
+footer{padding:40px 16px 120px;text-align:center;color:var(--dim);font-size:14px;border-top:1px solid var(--line);background:#ece8df}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:14px}
+.badges span{font:11px Verdana,sans-serif;border:2px outset #ccc;background:#fff;padding:3px 8px;color:#333}
+.badges .uc{background:repeating-linear-gradient(45deg,#ffd400 0 8px,#222 8px 16px);color:#fff;text-shadow:1px 1px 0 #000;font-weight:700}
+.hits{font-family:'Courier New',monospace;background:#000;color:var(--lime);padding:2px 8px;letter-spacing:3px}
+.disc{max-width:760px;margin:12px auto 0;line-height:1.5}
+
+/* ---------- the tiny man who walks across the screen ---------- */
+.tiny{position:fixed;left:0;bottom:6px;z-index:55;width:70px;height:120px;pointer-events:none;will-change:transform}
+.tiny .h{position:absolute;top:0;left:5px;width:60px;height:60px;border-radius:50%;background:url(head.png) center/cover;z-index:2}
+.tiny .t{position:absolute;top:46px;left:12px;width:46px;height:46px;border-radius:12px 12px 6px 6px;background:repeating-linear-gradient(90deg,transparent 0 6px,rgba(120,40,40,.45) 6px 8px),repeating-linear-gradient(0deg,var(--plaid2) 0 6px,var(--plaid1) 6px 8px)}
+.tiny .t:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:10px;margin-left:-5px;background:#4a3d6b}
+.tiny .l{position:absolute;top:88px;width:10px;height:30px;background:#2f3f6b;border-radius:3px;transform-origin:50% 0}
+.tiny .l1{left:22px}.tiny .l2{left:38px}
+.tiny .bub{position:absolute;bottom:126px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:10px;padding:3px 10px;font-size:13px;white-space:nowrap;opacity:0;transition:opacity .3s;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.tiny.say .bub{opacity:1}
+.tiny.walk .l1{animation:leg .36s ease-in-out infinite alternate}
+.tiny.walk .l2{animation:leg .36s ease-in-out infinite alternate-reverse}
+@keyframes leg{from{transform:rotate(25deg)}to{transform:rotate(-25deg)}}
+.tiny .fl{position:absolute;inset:0;transition:transform .2s}
+.tiny.left .fl{transform:scaleX(-1)}
+
+/* toast popup */
+.toast{position:fixed;left:16px;bottom:16px;z-index:70;width:min(330px,calc(100vw - 32px));padding:14px 40px 14px 14px;display:flex;gap:12px;align-items:center;transform:translateY(160%);transition:transform .4s cubic-bezier(.2,1.3,.4,1)}
+.toast.on{transform:none}
+.toast img{width:46px;height:46px;border-radius:50%}
+.toast button{position:absolute;top:6px;right:8px;all:unset;cursor:pointer;font-size:20px;color:var(--dim)}
+.toast .x{position:absolute;top:6px;right:10px}
+
+@media (max-width:880px){
+  .prof,.post-grid,.hot{grid-template-columns:1fr}
+  .people{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .comp{grid-template-columns:1fr}
+  .strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .search,.nav-links{display:none}
+  .k-window{display:none}
+}
+@media (max-width:480px){.hire .row{grid-template-columns:1fr}.tiny{transform:scale(.8)}}
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <div class="nav-in">
+    <a class="logo" href="#top">LilMen<i>.net</i></a>
+    <input class="search" type="search" placeholder="Search for little men" aria-label="Search (decorative)">
+    <div class="nav-links">
+      <a href="#about"><b></b>Feed</a>
+      <a href="#people"><b></b>Network<span class="bdg">99+</span></a>
+      <a href="#hire"><b></b>Jobs</a>
+      <a href="#match"><b></b>ChiMatch<span class="bdg">3</span></a>
+    </div>
+    <a class="btn solid" href="#buy">Buy $CHIMAN</a>
+  </div>
+  <div class="ticker" aria-hidden="true"><span>BREAKING: local chihuahua promoted to Senior Shaking Officer &bull; "He's basically a little man," says everyone &bull; Little man spotted wearing flannel in kitchen, demands to speak to manager &bull; $CHIMAN now on Solana &bull; 7 little men viewed your profile &bull; Reminder: it is never too early for a treat &bull;</span></div>
+</nav>
+
+<main id="top">
+<!-- ================= HERO: profile in a kitchen ================= -->
+<header class="kitchen">
+  <div class="pl k-wall" data-speed=".1" aria-hidden="true"></div>
+  <div class="pl k-window" data-speed=".2" aria-hidden="true"></div>
+  <div class="pl k-shelf" data-speed=".32" aria-hidden="true">
+    <div class="cab" style="left:30%"></div><div class="cab" style="left:48%"></div>
+    <div class="cab" style="right:4%"></div>
+    <span class="jar" style="right:20%;top:150px"></span><span class="jar" style="right:24%;top:150px;background:linear-gradient(#ffe08a,#f0b93a)"></span>
+  </div>
+  <div class="pl k-counter" data-speed="-.12" aria-hidden="true"><span class="coffee" style="left:6%"></span><span class="coffee" style="right:8%;height:90px"></span></div>
+  <div class="pl" data-speed="-.25" style="bottom:0;height:0" aria-hidden="true"><span class="chair" style="left:2%"></span><span class="chair" style="right:3%"></span></div>
+
+  <div class="prof">
+    <div class="card pc rv">
+      <div class="cover"><b>Profile strength: Little Man</b></div>
+      <div class="body">
+        <div class="ava"><img src="head.png" alt="Chi Man profile photo, a grey chihuahua face"><span class="otw" aria-hidden="true"></span></div>
+        <h1>Chi Man <small>(he/him/little man) &middot; 1st</small></h1>
+        <p class="headline">Senior Shaking Officer at <b>$CHIMAN</b> | Ex-Purse | Little Man, Big Vision | Thought Leader in Floor Snacks</p>
+        <p class="meta">Kitchen, Solana &middot; <a href="#people">500+ connections</a> &middot; <a href="#ca">Contact info</a></p>
+        <div class="acts">
+          <a class="btn solid" href="#buy">Buy $CHIMAN</a>
+          <button class="btn" id="connect" type="button">+ Connect</button>
+          <a class="btn" href="#hire">Hire a Little Man</a>
+        </div>
+      </div>
+    </div>
+    <aside class="side">
+      <figure class="card fullbody rv" style="margin:0">
+        <img src="meme_01.jpg" alt="A chihuahua standing upright in a flannel shirt in a kitchen, looking exactly like a little man">
+        <p>Full-body headshot. Standing. In flannel. In the kitchen. Like a man.</p>
+      </figure>
+      <div class="card views rv"><b id="views">7</b>little men viewed your profile this week</div>
+    </aside>
+  </div>
+</header>
+
+<!-- ================= LORE: the post ================= -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <h2 class="h2 rv">About</h2>
+    <p class="lead rv">Featured post &middot; 4,201 reactions &middot; somehow still trending</p>
+    <div class="post-grid">
+      <article class="card post rv" id="post">
+        <div class="hd"><img src="head.png" alt=""><div><b>Chi Man</b><small>Senior Shaking Officer &middot; 2h &middot; Edited</small></div></div>
+        <p>I was told I was "just a dog." Today I am a little man. Here's what it taught me about leadership. &darr;</p>
+        <p>The internet figured it out a long time ago: <b>chihuahuas are just little men.</b> Look at any of us. The worried eyebrows. The tiny shoulders. The way we stand in a kitchen in a flannel shirt like we're about to ask if you've "had a look at the boiler." We are not pets. We are small middle managers with ears.</p>
+        <button class="seemore" type="button">...see more</button>
+        <div class="more">
+          <p>Somewhere, someone put one of us in a shirt, stood him upright, and took a photo. It went everywhere. Then came the hoodie one, the one that stares directly into your soul, and the one who forgot his tongue was out. Group chats agreed: these are not dogs. These are guys.</p>
+          <p>So here's my journey. I started in a handbag. I moved into a lap. Now I'm in the kitchen, standing, wearing flannel, taking meetings. Nobody gave me a title, so I gave myself one.</p>
+          <p>$CHIMAN is a meme coin on Solana for every little man who has ever shaken in a cold room and called it "being passionate." No roadmap, no promises, just a network of tiny guys with big energy.</p>
+          <p>Agree? Comment "LITTLE MAN" and I'll send you nothing.</p>
+        </div>
+        <div class="reacts"><span id="rc">4,201 reactions &middot; 312 comments</span><span><button type="button" data-r="Insightful">Insightful</button><button type="button" data-r="Shaking">Shaking</button><button type="button" data-r="Little Man">Little Man</button></span></div>
+      </article>
+      <div class="card exp rv">
+        <h3>Experience</h3>
+        <div class="job"><i style="background:linear-gradient(135deg,#ff5fb0,#ffd1e8)"></i><div><b>Handbag Passenger</b><small>Designer Purse &middot; 2019&ndash;2021</small><small>Rode around. Judged people. Shook.</small></div></div>
+        <div class="job"><i style="background:linear-gradient(135deg,#c9a57a,#f0dcbf)"></i><div><b>Lap Consultant</b><small>The Couch &middot; 2021&ndash;2023</small><small>Increased warmth KPIs by 400%.</small></div></div>
+        <div class="job"><i style="background:linear-gradient(135deg,#8a7a4f,#b8a878)"></i><div><b>Senior Shaking Officer</b><small>$CHIMAN &middot; Present</small><small>Standing upright. Wearing flannel. Leading.</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PEOPLE (memes) ================= -->
+<section class="sec" id="people" style="padding-top:20px">
+  <div class="wrap">
+    <h2 class="h2 rv">People also viewed</h2>
+    <p class="lead rv">Little men in your network. Endorse their skills. They'll never know.</p>
+    <div class="people" id="peopleGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CHIMATCH (remix gallery) ================= -->
+<section class="sec dating" id="match">
+  <div class="wrap">
+    <h2 class="h2 rv">ChiMatch '03 <span class="blink">NEW!!</span></h2>
+    <p class="lead rv" style="color:#7a2a55">Hot or Chi? Rate little men in your area. 100% free! No credit card! (We would not know what to do with it.)</p>
+    <div class="hot">
+      <div class="frame rv"><img id="hotImg" src="remix_01.jpg" alt=""><div class="asl" id="hotAsl"></div></div>
+      <div class="rate rv">
+        <h3 id="hotName">Rate this little man:</h3>
+        <div class="nums" id="nums"></div>
+        <div class="score" id="score" aria-live="polite">Click a number. Be honest. He can't read.</div>
+        <p style="margin:0;font-size:15px">Members online now: <b id="online">1,337</b> &middot; <span class="blink">&#9829;</span> 3 winks waiting</p>
+      </div>
+    </div>
+    <div class="strip" id="strip" aria-label="All ChiMatch photos"></div>
+  </div>
+</section>
+
+<!-- ================= HIRE (office parallax) ================= -->
+<section class="office" id="hire">
+  <div class="pl o-blinds" data-speed=".18" aria-hidden="true"></div>
+  <div class="pl o-cubes" data-speed="-.1" aria-hidden="true"></div>
+  <div class="pl o-plant" data-speed="-.22" aria-hidden="true"></div>
+  <form class="card hire rv" id="hireForm" novalidate>
+    <h2 class="h2">Hire a Little Man</h2>
+    <p class="lead" style="margin:0">Fill in the form. A little man will not get back to you. This form does not send anything anywhere.</p>
+    <div class="row">
+      <div><label for="f1">Your name</label><input id="f1" placeholder="Hiring Manager"></div>
+      <div><label for="f2">Company</label><input id="f2" placeholder="Big Dog Inc."></div>
+    </div>
+    <label for="f3">Role</label>
+    <select id="f3"><option>Senior Shaking Officer</option><option>VP of Tongue Operations</option><option>Head of Doorbell Alarms</option><option>Chief Staring Officer</option><option>Lap Consultant (part time)</option></select>
+    <label for="f4">Salary: <output id="f4o">12</output> treats / hour</label>
+    <input id="f4" type="range" min="1" max="100" value="12">
+    <label for="f5">Why do you want a little man?</label>
+    <textarea id="f5" placeholder="He looks like a guy named Gary."></textarea>
+    <p style="margin:16px 0 0"><button class="btn solid" type="submit">Submit application</button></p>
+    <div class="ok" id="hireOk" role="status"></div>
+  </form>
+</section>
+
+<!-- ================= HOW TO BUY ================= -->
+<section class="sec" id="buy">
+  <div class="wrap">
+    <h2 class="h2 rv">Onboarding checklist</h2>
+    <p class="lead rv">Welcome aboard. Complete your profile to become a little man.</p>
+    <div class="prog rv"><i id="prog"></i></div>
+    <ol class="check" id="check">
+      <li class="card rv"><input type="checkbox" id="c1"><label for="c1"><b>Get Phantom</b>Download the Phantom wallet app or extension. Save your seed phrase somewhere safe and offline.</label></li>
+      <li class="card rv"><input type="checkbox" id="c2"><label for="c2"><b>Get SOL</b>Buy SOL on an exchange or in Phantom, and send it to your Phantom wallet. Keep a bit extra for fees.</label></li>
+      <li class="card rv"><input type="checkbox" id="c3"><label for="c3"><b>Go to pump.fun</b>Open pump.fun and connect your Phantom wallet. Check the URL like a suspicious little man.</label></li>
+      <li class="card rv"><input type="checkbox" id="c4"><label for="c4"><b>Paste the CA</b>Copy the official $CHIMAN contract address from Contact info below and paste it into the search bar.</label></li>
+      <li class="card rv"><input type="checkbox" id="c5"><label for="c5"><b>Buy $CHIMAN</b>Choose an amount you can afford to lose, confirm in Phantom. Congratulations on your new position.</label></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= TOKENOMICS ================= -->
+<!-- only keep these claims if true at launch -->
+<section class="sec" id="comp" style="padding-top:20px">
+  <div class="wrap">
+    <h2 class="h2 rv">Compensation package</h2>
+    <p class="lead rv">Competitive. For a little man.</p>
+    <div class="comp">
+      <div class="card rv"><small>Total supply</small><b>1,000,000,000</b><p>$CHIMAN tokens. One billion little shares.</p></div>
+      <div class="card rv"><small>Launch</small><b>Fair launch</b><p>On pump.fun. Everybody starts at the same tiny desk.</p></div>
+      <div class="card rv"><small>Benefits</small><b>Treats (emotional)</b><p>No dental. No equity. Just vibes and a sweater.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CA + SOCIALS ================= -->
+<section class="sec" id="ca" style="padding-top:20px">
+  <div class="wrap">
+    <div class="card contact rv">
+      <h2 class="h2" style="font-size:28px">Contact info</h2>
+      <p class="lead" style="margin:0">Chi Man's contract address</p>
+      <div class="ca"><code id="caText">Contract address revealed at launch</code><button class="btn solid" id="copy" type="button">Copy</button></div>
+      <div class="msg" id="caMsg" aria-live="polite"></div>
+      <div class="links"><a class="btn" href="#">X / Twitter</a><a class="btn" href="#">pump.fun</a><a class="btn" href="#">DexScreener</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="badges"><span class="uc">UNDER CONSTRUCTION</span><span>Best viewed in Internet Explorer 6</span><span>800&times;600</span><span>Sign my guestbook (no)</span></div>
+  <p>Profile views since 2003: <span class="hits" id="hits">0000000</span></p>
+  <p class="disc">$CHIMAN is a meme coin with no intrinsic value and no expectation of financial return. For entertainment only. LilMen.net and ChiMatch are made-up parody sites; not affiliated with LinkedIn, any dating site, or the owners or photographers of the dogs pictured. No real hiring happens here and the form sends nothing. Crypto is risky. Do your own research and only spend what you can afford to lose.</p>
+  <p>&copy; 2003 LilMen.net &middot; Terms &middot; Privacy (we have none, we're dogs)</p>
+</footer>
+
+<!-- tiny man walks across the bottom of the screen as you scroll -->
+<div class="tiny" id="tiny" aria-hidden="true"><div class="fl"><span class="l l1"></span><span class="l l2"></span><span class="t"></span><span class="h"></span></div><span class="bub" id="bub">hello</span></div>
+
+<div class="card toast" id="toast" role="status"><img src="meme_03.jpg" alt=""><div id="toastT"><b>Tiny Tim</b> wants to connect</div><button class="x" id="toastX" type="button" aria-label="Close">&times;</button></div>
+
+<script>
+const CA = "";
+(function(){
+"use strict";
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var $=function(s){return document.querySelector(s)}, $$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+
+/* ---------- people cards: the four original memes ---------- */
+var PEOPLE=[
+ ['meme_01.jpg','Chi Man','Senior Shaking Officer @ $CHIMAN','Standing upright',88,'Flannel',61],
+ ['meme_02.jpg','Hoodie Hector','Head of Vibes (Remote) | Hood Up, Ears Up','Side-eye',204,'Being cold',99],
+ ['meme_03.jpg','Tiny Tim','Chief Staring Officer | Intern, unpaid','Staring',512,'Silence',73],
+ ['meme_04.jpg','Tongue Tony','VP of Tongue Operations | Ex-Model','Tongue Ops',340,'Eyes',150]];
+var pg=$('#peopleGrid');
+PEOPLE.forEach(function(p){ var d=document.createElement('article'); d.className='card person rv';
+  d.innerHTML='<div class="ph"><img loading="lazy" src="'+p[0]+'" alt="'+p[1]+', a chihuahua who is basically a little man"></div><div class="in"><h3>'+p[1]+'</h3><div class="ttl">'+p[2]+'</div>'+
+  '<div class="skill"><span>'+p[3]+' &middot; <b>'+p[4]+'</b></span><button type="button">Endorse</button></div><div class="skill"><span>'+p[5]+' &middot; <b>'+p[6]+'</b></span><button type="button">Endorse</button></div></div>';
+  pg.appendChild(d); });
+pg.addEventListener('click',function(e){ var b=e.target.closest('button'); if(!b) return; var n=b.previousElementSibling.querySelector('b');
+  var on=b.classList.toggle('done'); n.textContent=(+n.textContent)+(on?1:-1); b.textContent=on?'Endorsed':'Endorse'; });
+
+/* ---------- reveal ---------- */
+var io=('IntersectionObserver' in window && !RM)?new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{threshold:.12}):null;
+$$('.rv').forEach(function(el){ if(io) io.observe(el); else el.classList.add('in'); });
+
+/* ---------- parallax layers + tiny walking man ---------- */
+var pls=$$('[data-speed]'), tiny=$('#tiny'), bub=$('#bub'), lastY=window.pageYOffset, walkT=null, ticking=false;
+var SAYS=['hello','im a man','per my last email','circling back','any treats?','let\'s take this offline','i have a meeting','where is my sweater','synergy','i am shaking (professionally)'];
+var lastSay=-1;
+function frame(){
+  ticking=false;
+  var y=window.pageYOffset, max=Math.max(1,document.documentElement.scrollHeight-innerHeight), p=y/max;
+  pls.forEach(function(el){ var sec=el.parentNode, top=sec.offsetTop, rel=y-top; el.style.transform='translate3d(0,'+(rel*parseFloat(el.getAttribute('data-speed'))).toFixed(1)+'px,0)'; });
+  var x=p*(innerWidth-80);
+  tiny.style.transform='translate3d('+x.toFixed(0)+'px,0,0)';
+  tiny.classList.toggle('left',y<lastY);
+  tiny.classList.add('walk'); clearTimeout(walkT); walkT=setTimeout(function(){ tiny.classList.remove('walk'); },180);
+  var si=Math.floor(p*SAYS.length*1.4)%SAYS.length;
+  if(si!==lastSay && y>100){ lastSay=si; bub.textContent=SAYS[si]; tiny.classList.add('say'); clearTimeout(frame.s); frame.s=setTimeout(function(){ tiny.classList.remove('say'); },1600); }
+  lastY=y;
+}
+if(!RM){ addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(frame); } },{passive:true}); addEventListener('resize',frame); frame(); tiny.classList.remove('walk'); }
+
+/* ---------- post interactions ---------- */
+$('.seemore').addEventListener('click',function(){ $('#post').classList.add('open'); });
+var reacts=4201;
+$$('.reacts button').forEach(function(b){ b.addEventListener('click',function(){ reacts++; $('#rc').textContent=reacts.toLocaleString()+' reactions · 312 comments · you reacted "'+b.getAttribute('data-r')+'"'; }); });
+$('#connect').addEventListener('click',function(){ this.textContent='Pending (he is sniffing it)'; toast('<b>Chi Man</b> received your request. He is thinking about it.'); });
+
+/* ---------- ChiMatch: all remixes ---------- */
+var HOT=[['remix_01.jpg','Flannel Frank','4/M/kitchen','Likes: deep frying, tiled floors. Dislikes: vacuum.'],['remix_02.jpg','Pixel Pete','4/M/dial-up','Shy. Only shows his face in 16 colours.'],['remix_03.jpg','The Gemini Twins','4/M/M/kitchen','Two for one. Both in flannel. Both shaking.'],['remix_04.jpg','Sketchy Steve','5/M/sketchbook','Artsy. Monochrome. Will draw you (badly).'],['remix_05.jpg','Little Man Larry','4/M/the counter','Literally has LITTLE MAN written on his photo.'],['remix_06.jpg','Hoodie Hank','3/M/the hood','Deep fried. Hood up. Looking for a lap.']];
+var hi=0, strip=$('#strip'), RES=['Ouch. He is shaking now.','Harsh. He will tell his mom.','A solid "would let sit on lap".','He is blushing under the fur.','PERFECT 10! Wedding is Saturday. Bring treats.'];
+function showHot(i){ hi=(i+HOT.length)%HOT.length; var h=HOT[hi]; $('#hotImg').src=''+h[0]; $('#hotImg').alt=h[1]+', a chihuahua remix'; $('#hotName').textContent='Rate '+h[1]+':'; $('#hotAsl').innerHTML='<b>A/S/L:</b> '+h[2]+'<br>'+h[3];
+  $$('#strip button').forEach(function(b,j){ b.classList.toggle('on',j===hi); }); }
+HOT.forEach(function(h,i){ var b=document.createElement('button'); b.type='button'; b.innerHTML='<img loading="lazy" src="'+h[0]+'" alt="'+h[1]+'">'; b.addEventListener('click',function(){ showHot(i); }); strip.appendChild(b); });
+for(var n=1;n<=10;n++){ var nb=document.createElement('button'); nb.type='button'; nb.textContent=n; nb.addEventListener('click',(function(v){ return function(){ $('#score').textContent=v+'/10 for '+HOT[hi][1]+'. '+RES[Math.min(4,Math.floor((v-1)/2))]; setTimeout(function(){ showHot(hi+1); },900); }; })(n)); $('#nums').appendChild(nb); }
+showHot(0);
+setInterval(function(){ $('#online').textContent=(1300+Math.floor(Math.random()*90)).toLocaleString(); },2500);
+
+/* ---------- hire form (does nothing, on purpose) ---------- */
+$('#f4').addEventListener('input',function(){ $('#f4o').textContent=this.value; });
+$('#hireForm').addEventListener('submit',function(e){ e.preventDefault(); var ok=$('#hireOk'), role=$('#f3').value, t=$('#f4').value;
+  ok.textContent='Application received. The little man has sniffed it, sat on it, and fallen asleep. Role: '+role+' at '+t+' treats/hour. (Nothing was sent anywhere.)'; ok.classList.add('on'); });
+
+/* ---------- onboarding checklist ---------- */
+var cbs=$$('#check input');
+cbs.forEach(function(c){ c.addEventListener('change',function(){ c.closest('li').classList.toggle('done',c.checked); var d=cbs.filter(function(x){return x.checked}).length; $('#prog').style.width=(d/cbs.length*100)+'%'; if(d===cbs.length) toast('<b>Profile complete!</b> You are now a little man.'); }); });
+
+/* ---------- CA ---------- */
+if(CA) $('#caText').textContent=CA;
+$('#copy').addEventListener('click',function(){ var m=$('#caMsg');
+  if(!CA){ m.textContent='The contract address is revealed at launch.'; return; }
+  if(navigator.clipboard) navigator.clipboard.writeText(CA).then(function(){ m.textContent='Copied. Little man approves.'; },function(){ m.textContent='Copy failed, select it manually.'; });
+  else m.textContent='Select the address and copy it manually.'; });
+
+/* ---------- connect-request toasts ---------- */
+var toastEl=$('#toast'), tt=null;
+function toast(html){ $('#toastT').innerHTML=html; toastEl.classList.add('on'); clearTimeout(tt); tt=setTimeout(function(){ toastEl.classList.remove('on'); },5000); }
+$('#toastX').addEventListener('click',function(){ toastEl.classList.remove('on'); });
+setTimeout(function(){ toast('<b>Tiny Tim</b> wants to connect. He has been staring at you for 20 minutes.'); },4000);
+
+/* ---------- counters ---------- */
+var v=7; setInterval(function(){ if(Math.random()<.4){ v++; $('#views').textContent=v; } },3000);
+$('#hits').textContent=String(400000+Math.floor(Math.random()*9999)).padStart(7,'0');
+})();
+</script>
+</body>
+</html>
